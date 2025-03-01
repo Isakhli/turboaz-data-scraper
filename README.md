@@ -99,3 +99,6 @@ basliq = elan.find_element(By.CLASS_NAME, 'products-i__name').text.strip()
 qiymet = elan.find_element(By.CLASS_NAME, 'product-price').text.strip()
 link = elan.find_element(By.TAG_NAME, 'a').get_attribute('href')
 Hər bir elanın başlıq, qiymət və link məlumatları çıxarılır.
+
+...
+Bu funksiya, "turboaz_avtomobiller.xlsx" adlı Excel faylını oxuyur, oradakı "Marka" və "Model" sütunlarını seçir və bu sütunların sayını hesablayır. Hesablanan məlumatları "turboaz_marka_model.xlsx" və "turboaz_marka_model_sayim.xlsx" fayllarına yazır.
